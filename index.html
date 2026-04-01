@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Tracker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>My Study Insights</h1>
+            <p id="current-date"></p>
+        </header>
+
+        <main class="dashboard-grid">
+            <section class="card chart-container">
+                <h3>Time Distribution</h3>
+                <canvas id="studyPieChart"></canvas>
+            </section>
+
+            <section class="card info-container">
+                <h3>Session Details</h3>
+                <ul>
+                    <li><strong>Location:</strong> <span id="location">University Library</span></li>
+                    <li><strong>Focus Mode:</strong> High</li>
+                    <li><strong>Resources:</strong> Online Docs, Textbooks</li>
+                </ul>
+                <div class="status-badge">Active Session</div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
